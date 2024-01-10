@@ -1,0 +1,105 @@
+/* Skill.css */
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #f2f2f2;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(26, 25, 29);
+}
+
+.skills h1 {
+  font-family: "Poppins", Sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-top: 20px;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.expertise {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #ddd;
+  padding: 20px;
+}
+
+.expertise > * {
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.expertise > *:last-child {
+  border-right: none;
+}
+
+.image-skill {
+  top: -25px;
+  left: 50%;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.image-skill img {
+  display: block;
+  margin: 0 auto;
+  width: 34%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+
+/* Media query para pantallas más pequeñas (como dispositivos móviles) */
+@media screen and (max-width: 768px) {
+  .skills-container {
+    height: 100%;
+  }
+  .skills {
+    flex-direction: column; /* Cambia la disposición a columna en pantallas más pequeñas */
+    margin: auto;
+  }
+
+  .skills h1 {
+    font-size: 50px;
+    margin-top: 100px
+  }
+
+  .expertise {
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;    
+  }
+
+  .expertise > * {
+    border-bottom: 2px solid #ddd;
+    border-right: none;
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .expertise > *:last-child {
+    border-bottom: none;
+  }
+
+  .expertise-text {
+    margin-bottom: 20px;
+  }
+
+  .image-skill img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.2;
+  }
+}

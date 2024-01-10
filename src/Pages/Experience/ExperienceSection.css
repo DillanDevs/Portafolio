@@ -1,0 +1,99 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  background: #f2f2f2;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(26, 25, 29);
+}
+
+.experience-container h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  /* centralizar texto */
+  text-align: center;
+  font-family: "Poppins", Sans-serif;
+  padding: 0;
+  line-height: 1.2; /* Ajusta este valor según tus preferencias */
+}
+
+.experience-nav {
+  margin: 2rem 0;
+}
+
+.experience-nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-nav-item {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.experience-nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.experience-nav-item img {
+  width: 1.5rem; /* Ajusta el tamaño del ícono según tus preferencias */
+  height: 1.5rem;
+  margin-right: 0.5rem; /* Espaciado entre el ícono y el texto */
+}
+
+.experience-nav-link:hover {
+  color: #677febde; /* Cambia este color según tus preferencias */
+}
+
+.experience-nav button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-container {
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
+  }
+
+  .experience-container h1 {
+    font-size: 3rem; /* Reducido el tamaño del título para dispositivos móviles */
+    margin-bottom: 1rem; /* Ajusta el margen inferior según tus preferencias */
+  }
+
+  .experience-nav-list {
+    flex-direction: column; /* Cambia la disposición a columna para dispositivos móviles */
+    align-items: center; /* Centra los elementos en dispositivos móviles */
+  }
+
+  .experience-nav-item {
+    margin: 0.5rem 0; /* Ajusta el espaciado entre los elementos de la lista */
+  }
+
+  .experience-nav-link {
+    font-size: 1rem; /* Ajusta el tamaño del texto de los botones para dispositivos móviles */
+  }
+
+  .experience-nav-item img {
+    width: 1rem; /* Ajusta el tamaño de los íconos para dispositivos móviles */
+    height: 1rem;
+    margin-right: 0.25rem; /* Ajusta el espaciado entre el ícono y el texto para dispositivos móviles */
+  }
+}

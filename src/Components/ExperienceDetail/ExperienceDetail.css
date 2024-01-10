@@ -1,0 +1,117 @@
+/* ExperienceDetail.css */
+.xp-details {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 700px; /* Ancho fijo en píxeles o cualquier otra unidad */
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #241d41;
+}
+
+
+.xp-location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.xp-location p {
+  margin-right: 18px; /* Ajusta el margen derecho según tus necesidades */
+}
+
+.xp-content {
+  max-width: 500px; /* Ancho máximo para el contenido de la experiencia */
+}
+
+.xp-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.xp-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus preferencias */
+}
+
+.xp-logo {
+  max-width: 100px; /* Tamaño máximo del contenedor del logo */
+  margin-left: auto; /* Mueve la imagen hacia el lado derecho */
+  margin-right: auto; /* Añade un margen a la derecha para separarla del contenido */
+  align-self: center; /* Centra verticalmente la imagen dentro de su contenedor */
+}
+
+.xp-logo img {
+  max-height: 100px; /* Altura máxima de la imagen del logo */
+  object-fit: contain; /* Ajusta la imagen para caber dentro del contenedor sin distorsión */
+  
+}
+
+.xp-ubication {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.xp-description {
+  margin-bottom: 15px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.xp-technologies {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los contenedores se envuelvan a la siguiente línea si no hay suficiente espacio */
+}
+
+.xp-tech-item-container {
+  border-radius: 18px;
+  padding: 6px;
+  margin-right: 10px; /* Espacio entre los contenedores */
+  margin-bottom: 10px; /* Espacio entre las tecnologías */
+  background-color: #3e3c75;
+  font-family: "Roboto Mono",Sans-serif;
+}
+
+.xp-tech-item {
+  margin: 0; /* Elimina el margen dentro del contenedor */
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 768px) {
+  .xp-details {
+    width: auto; /* Ajusta el ancho según tus preferencias */
+    margin-left: 10px; /* Ajusta el margen izquierdo según tus preferencias */
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+    /* crea un grid de una sola columna */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .xp-location {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .xp-logo {
+    margin-left: auto; /* Elimina el margen izquierdo */
+    margin-right: auto; /* Elimina el margen derecho */
+    align-self: center; /* Centra verticalmente la imagen dentro de su contenedor */
+  }
+  
+  .xp-logo img {
+    /* coloca la imagen mas pequeña */
+    max-height: 100px;
+
+  }
+  
+}

@@ -1,0 +1,122 @@
+.home-container {
+  background: url("../../assets/dillan-home-cover.jpg") center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  height: 100vh;
+  /* haz que la imagen sea mas oscura */
+  background-color: rgba(56, 56, 56, 0.5);
+  background-blend-mode: overlay;
+  /* Agrega el degradado antes de finalizar la imagen */
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #00000012 60%, #1a191d 100%);
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -7rem;
+}
+
+.home h1 {
+  color: white; /* Ajusta el color del texto para que sea legible en la imagen de fondo */
+  font-size: 10vw;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  margin: 0;
+}
+.home h5 {
+  color: white; /* Ajusta el color del texto para que sea legible en la imagen de fondo */
+  font-size: 1vw;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  text-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+  margin: 0;
+}
+
+#section07 a {
+  position: absolute;
+  bottom: 8rem; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 10vw;
+  }
+
+  .home h5 {
+    font-size: 0.9rem;
+    /* centrar texto */
+    text-align: center;
+    padding: auto;
+  }
+}

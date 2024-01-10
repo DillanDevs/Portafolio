@@ -1,0 +1,206 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(26, 25, 29); /* Color de fondo para toda la página */
+}
+
+.project-container {
+  height: 100vh;
+  text-align: center;
+  background-color: rgb(26, 25, 29);
+  font-family: "Poppins", Sans-serif;
+}
+
+.project-container NavBar {
+  margin-bottom: 20px;
+}
+
+.project-content-container {
+  width: 65%;
+  margin: 160px auto; /* Ajusta el margen superior e inferior según sea necesario */
+}
+/* Projects.css */
+
+.project-title h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: white;
+  max-width: 60%;
+  line-height: 1.2;
+  margin: 0; /* Añade esto para eliminar márgenes predeterminados */
+}
+
+.project-title-path {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.project-description-container {
+  display: flex;
+}
+
+.project-description p {
+  font-size: 1rem;
+  color: white;
+  max-width: 45%;
+  line-height: 1.5;
+  margin: 0; /* Añade esto para eliminar márgenes predeterminados */
+}
+
+.project-content {
+  text-align: left;
+  color: white;
+}
+
+.project-images {
+  margin-top: 70px; /* Ajusta según sea necesario */
+}
+
+.project-images img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Projects.css */
+
+.project-technologies {
+  margin-top: 20px; /* Ajusta según sea necesario */
+  position: relative;
+  left: -20rem; /* Ajusta según sea necesario para mover hacia la izquierda */
+}
+
+.project-technologies h3 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.project-technologies h3::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Ajusta según sea necesario para la posición de la línea */
+  left: 0;
+  width: 56%;
+  height: 1px;
+  background-color: white;
+}
+.project-technologies p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.project-technologies a {
+  margin-top: 10px; /* Ajusta según sea necesario */
+  color: white;
+  text-decoration: none; /* Puedes ajustar o quitar la subrayado según tus preferencias */
+  margin-right: 5px; /* Ajusta según sea necesario para separar el enlace del texto anterior */
+  font-weight: bold;
+}
+
+.project-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px; /* Ajusta según sea necesario */
+}
+
+.project-footer span {
+  color: white;
+}
+
+.project-footer a {
+  color: white;
+  text-decoration: underline; /* Puedes ajustar o quitar la subrayado según tus preferencias */
+  margin-left: 5px; /* Ajusta según sea necesario para separar el enlace del texto anterior */
+}
+
+.project-footer a:hover {
+  text-decoration: none; /* Quitar subrayado al pasar el mouse sobre el enlace */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .project-content-container {
+    width: 80%;
+  }
+
+  .project-description p {
+    max-width: 100%;
+  }
+
+  .project-technologies {
+    left: 0;
+  }
+
+  .project-description-container {
+    flex-direction: column;
+  }
+
+  .project-description p {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-images img {
+    margin-bottom: 20px;
+  }
+
+  .project-technologies h3::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Ajusta según sea necesario para la posición de la línea */
+    left: 0;
+    width: 20%;
+    height: 1px;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project-content-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-title h1 {
+    font-size: 3rem;
+  }
+
+  .project-description p {
+    font-size: 0.9rem;
+  }
+
+  .project-technologies h3 {
+    font-size: 0.9rem;
+  }
+
+  .project-technologies p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Projects.css */
+
+@media screen and (max-width: 480px) {
+  .project-images img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Projects.css */
+
+@media screen and (max-width: 768px) {
+  .project-title-path {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .project-technologies {
+    margin-top: 10px;
+    left: 0;
+  }
+}

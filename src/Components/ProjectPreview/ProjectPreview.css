@@ -1,0 +1,58 @@
+/* ProjectPreview.css */
+
+/* Container styles */
+.link-container {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+  margin-bottom: 20px;
+  background-color: rgba(136, 136, 136, 0.05);
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden; /* Evitar que el contenido sobresalga */
+}
+
+.link-container:hover {
+  transform: scale(1.03);
+}
+
+/* Image styles */
+.project-image {
+  width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styles */
+.project-info {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 10px;
+  overflow: hidden; /* Evitar que el contenido sobresalga */
+  white-space: nowrap; /* No permitir saltos de línea */
+  text-overflow: ellipsis; /* Mostrar puntos suspensivos si el texto es demasiado largo */
+  color: white;
+
+}
+
+.project-info span {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .link-container {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "label": "Web Development",
+        "title": "DJG Bank (Banking Solution)",
+        "description": "DJG Bank is a website that simulates an online bank. It allows users to create accounts, access services such as savings accounts and cards, make transactions, and request credit. The money shown is fictitious and has no validity in any country, designed to recreate the online banking experience.",
+        "technologies": "React, Spring Boot, PostgreSQL, JWT, Spring Security, API Rest, Maven",
+        "images": [
+            "/src/assets/projects/bank/1.png",
+            "/src/assets/projects/bank/2.png",
+            "/src/assets/projects/bank/3.png",
+            "/src/assets/projects/bank/4.png"
+        ],
+        "url" : "https://djgbank.netlify.app/"
+    },
+    {
+        "id": 2,
+        "label": "Web Development",
+        "title": "Sysmed Pro (Hospital Management System)",
+        "description": "SysMed Pro is a prototype hospital management tool that simplifies the administration of medical appointments. It allows patients to request appointments, helps doctors manage their agendas, stores medical records and generates medical reports, contributing to more efficient and complete care.",
+        "technologies": "React, Node, Express, API Rest, JWT",
+        "images": [
+            "/src/assets/projects/hospital/1.png",
+            "/src/assets/projects/hospital/2.png",
+            "/src/assets/projects/hospital/3.png",
+            "/src/assets/projects/hospital/4.png",
+            "/src/assets/projects/hospital/5.png",
+            "/src/assets/projects/hospital/6.png"
+        ],
+        "url" : "https://sysmedpro.netlify.app/"
+
+    },
+    {
+        "id": 3,
+        "label": "Web Development",
+        "title": "Unicalc (University Calculator)",
+        "description": "UniCalc is a page that makes it easier for university students to track their grades during the semester. Provides a summary of the requirements necessary to pass a subject, indicating whether the subject has already been passed or has been missed. Additionally, it calculates the semester average, allowing students to be more connected to their academic performance.",
+        "technologies": "React, Firebase, Python, FastAPI, Heroku",
+        "images": [
+            "/src/assets/projects/unicalc/1.png",
+            "/src/assets/projects/unicalc/2.png",
+            "/src/assets/projects/unicalc/3.png",
+            "/src/assets/projects/unicalc/4.png",
+            "/src/assets/projects/unicalc/5.png"
+        ],
+        "url" : "https://github.com/SrOscuroBlck/UniCalc"
+    }
+    
+]
