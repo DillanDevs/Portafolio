@@ -61,6 +61,7 @@ export const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              onClick={handleClick}
             >
               Home
             </Link>
@@ -73,6 +74,7 @@ export const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              onClick={handleClick}
             >
               Skills
             </Link>
@@ -85,6 +87,8 @@ export const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              onClick={handleClick}
+
             >
               Projects
             </Link>
@@ -97,6 +101,7 @@ export const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              onClick={handleClick}
             >
               Experience
             </Link>
@@ -109,6 +114,8 @@ export const NavBar = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              onClick={handleClick}
+
             >
               Contact
             </Link>
