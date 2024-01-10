@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Landing } from "./Pages/Landing/Landing";
 import { Projects } from "./Pages/Projects/Projects";
-import ProjecsData from "./data/projects.json";
+import { ProjecsData } from "./data/projects";
 
 function App() {
   return (

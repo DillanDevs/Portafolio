@@ -1,6 +1,9 @@
 import React from "react";
 import { ContactForm } from "../../Components/ContacForm/ContactForm";
 import "./Contact.css";
+import github from "../../assets/github.svg";
+import linkedin from "../../assets/icons8-linkedin.svg";
+import email from "../../assets/icons8-nuevo-post-24.png";
 
 const Contact = () => {
 
@@ -14,7 +17,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={"src/assets/github.svg"} alt="GitHub Logo" />
+            <img src={github} alt="GitHub Logo" />
             <span>DillansDev</span>
           </a>
           <a
@@ -22,7 +25,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={"src/assets/icons8-linkedin.svg"} alt="LinkedIn Logo" />
+            <img src={linkedin} alt="LinkedIn Logo" />
             <span>Dillan Asprilla</span>
           </a>
           <a
@@ -30,7 +33,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={"src/assets/icons8-nuevo-post-24.png"} alt="LinkedIn Logo" />
+            <img src={email} alt="LinkedIn Logo" />
             <span>dillansdev@gmail.com</span>
           </a>
           <a href="./cv_dillan.pdf" download={''} className="bt-cv">

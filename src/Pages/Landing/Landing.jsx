@@ -5,7 +5,7 @@ import { ExperienceSection } from "../Experience/ExperienceSection";
 import Contact from "../Contact/Contact";
 import FloatingButton from "../../Components/FloatingButton/FloatingButton";
 
-import ProjecsData from "../../data/projects.json";
+import { ProjecsData } from "../../data/projects";
 import { ProjectsSection } from "../ProjectsSection/ProjectsSection";
 
 export const Landing = () => {

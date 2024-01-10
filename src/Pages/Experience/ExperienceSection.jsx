@@ -2,6 +2,11 @@ import React from "react";
 import { Experience } from "../../Components/Experience/Experience";
 import { useState } from "react";
 import "./ExperienceSection.css";
+import work from "../../assets/work.svg";
+import education from "../../assets/education.svg";
+import intel from "../../assets/intel.png";
+import zuap from "../../assets/zuap.png";
+import sanbue from "../../assets/sanbue.png";
 
 export const ExperienceSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("professional");
@@ -19,7 +24,7 @@ export const ExperienceSection = () => {
         description="Development of backend solutions in Intelisis providing support to the development team."
         technologies={["Golang", "Graphql", "PostgreSQL", "Docker"]}
         link="https://www.intellsis.com/"
-        logo="src/assets/intel.png"
+        logo={intel}
         name="Intellsis.com"
       />
       <Experience
@@ -29,7 +34,7 @@ export const ExperienceSection = () => {
         description="Quality assurance of the Zuappy platform, development of unit tests and provision of support to the development team."
         technologies={["UX/UI", "Excel", "Jira", "Postman"]}
         link="https://www.facebook.com/zuappysas/"
-        logo="src/assets/zuap.png"
+        logo={zuap}
         name="Zuappy.com"
       />
     </>
@@ -45,7 +50,7 @@ export const ExperienceSection = () => {
         description="I am currently studying software engineering at the San Buenaventura University, I am in the 6th semester and I am very happy to be able to study this career."
         technologies={["Agile", "Analysis", "Design", "Development", "Testing"]}
         link="https://usbcali.edu.co/"
-        logo="src/assets/sanbue.png"
+        logo={sanbue}
         name="SanBuenaventura.com"
       />
     </>
@@ -57,7 +62,7 @@ export const ExperienceSection = () => {
       <nav className="experience-nav">
         <ul className="experience-nav-list">
           <li className="experience-nav-item">
-            <img src="src/assets/work.svg" alt="icon" />
+            <img src={work} alt="icon" />
             <button
               onClick={() => handleCategoryChange("professional")}
               className={`experience-nav-link ${
@@ -68,7 +73,7 @@ export const ExperienceSection = () => {
             </button> 
           </li>
           <li className="experience-nav-item">
-            <img src="src/assets/education.svg" alt="icon" />
+            <img src={education} alt="icon" />
             <button
               onClick={() => handleCategoryChange("education")}
               className={`experience-nav-link ${
