@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { NavBar } from "../../Components/NavBar/NavBar";
+import FloatingButton from "../../Components/FloatingButton/FloatingButton";
 
 export const Projects = ({ projectsData }) => {
 
@@ -49,6 +50,7 @@ export const Projects = ({ projectsData }) => {
                 </span>
               </div>
             </footer>
+            <FloatingButton />
           </div>
         </div>
       </div>
